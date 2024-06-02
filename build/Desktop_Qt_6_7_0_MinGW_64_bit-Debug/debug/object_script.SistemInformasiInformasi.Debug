@@ -1,0 +1,13 @@
+debug/formbarang.o
+debug/formpelanggan.o
+debug/formpembelian.o
+debug/formpenjualan.o
+debug/formsupplier.o
+debug/main.o
+debug/halutama.o
+debug/moc_formbarang.o
+debug/moc_formpelanggan.o
+debug/moc_formpembelian.o
+debug/moc_formpenjualan.o
+debug/moc_formsupplier.o
+debug/moc_halutama.o
