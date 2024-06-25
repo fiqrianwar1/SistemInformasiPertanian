@@ -13,9 +13,11 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDateEdit>
 #include <QtWidgets/QFormLayout>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTableView>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -43,15 +45,16 @@ public:
     QPushButton *pushButton;
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
+    QTableView *tablePenjualan;
 
     void setupUi(QWidget *FormPenjualan)
     {
         if (FormPenjualan->objectName().isEmpty())
             FormPenjualan->setObjectName("FormPenjualan");
-        FormPenjualan->resize(521, 429);
+        FormPenjualan->resize(801, 497);
         formLayoutWidget = new QWidget(FormPenjualan);
         formLayoutWidget->setObjectName("formLayoutWidget");
-        formLayoutWidget->setGeometry(QRect(90, 60, 311, 201));
+        formLayoutWidget->setGeometry(QRect(20, 60, 311, 201));
         formLayout = new QFormLayout(formLayoutWidget);
         formLayout->setObjectName("formLayout");
         formLayout->setContentsMargins(0, 0, 0, 0);
@@ -127,16 +130,19 @@ public:
 
         pushButton_2 = new QPushButton(FormPenjualan);
         pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(250, 270, 151, 41));
+        pushButton_2->setGeometry(QRect(180, 270, 151, 41));
         pushButton = new QPushButton(FormPenjualan);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(90, 270, 151, 41));
+        pushButton->setGeometry(QRect(20, 270, 151, 41));
         pushButton_3 = new QPushButton(FormPenjualan);
         pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setGeometry(QRect(250, 320, 151, 41));
+        pushButton_3->setGeometry(QRect(180, 320, 151, 41));
         pushButton_4 = new QPushButton(FormPenjualan);
         pushButton_4->setObjectName("pushButton_4");
-        pushButton_4->setGeometry(QRect(90, 320, 151, 41));
+        pushButton_4->setGeometry(QRect(20, 320, 151, 41));
+        tablePenjualan = new QTableView(FormPenjualan);
+        tablePenjualan->setObjectName("tablePenjualan");
+        tablePenjualan->setGeometry(QRect(340, 60, 451, 301));
 
         retranslateUi(FormPenjualan);
 

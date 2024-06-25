@@ -8,6 +8,7 @@
 #include <QSqlQuery>
 #include <QDebug>
 #include <QSqlRecord>
+#include <QSqlQueryModel>
 
 namespace Ui {
 class FormBarang;
@@ -19,6 +20,7 @@ class FormBarang : public QWidget
 
 public:
     explicit FormBarang(QWidget *parent = nullptr);
+    void loadTableBarang();
     ~FormBarang();
 
 private slots:
@@ -30,11 +32,14 @@ private slots:
 
     void on_pushButton_3_clicked();
 
+    void on_tableBarang_activated(const QModelIndex &index);
+
 private:
     Ui::FormBarang *ui;
     QSqlDatabase koneksi;
     QSqlQuery sql;
     QSqlRecord cari;
+    QSqlQueryModel * tabelModel;
 };
 
 #endif // FORMBARANG_H

@@ -13,9 +13,11 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDateEdit>
 #include <QtWidgets/QFormLayout>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTableView>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -43,15 +45,16 @@ public:
     QPushButton *pushButton_3;
     QPushButton *pushButton;
     QPushButton *pushButton_4;
+    QTableView *tablePembelian;
 
     void setupUi(QWidget *FormPembelian)
     {
         if (FormPembelian->objectName().isEmpty())
             FormPembelian->setObjectName("FormPembelian");
-        FormPembelian->resize(448, 380);
+        FormPembelian->resize(800, 382);
         formLayoutWidget = new QWidget(FormPembelian);
         formLayoutWidget->setObjectName("formLayoutWidget");
-        formLayoutWidget->setGeometry(QRect(59, 29, 311, 201));
+        formLayoutWidget->setGeometry(QRect(9, 29, 311, 201));
         formLayout = new QFormLayout(formLayoutWidget);
         formLayout->setObjectName("formLayout");
         formLayout->setContentsMargins(0, 0, 0, 0);
@@ -127,16 +130,19 @@ public:
 
         pushButton_2 = new QPushButton(FormPembelian);
         pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(220, 240, 151, 41));
+        pushButton_2->setGeometry(QRect(170, 240, 151, 41));
         pushButton_3 = new QPushButton(FormPembelian);
         pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setGeometry(QRect(220, 290, 151, 41));
+        pushButton_3->setGeometry(QRect(170, 290, 151, 41));
         pushButton = new QPushButton(FormPembelian);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(60, 240, 151, 41));
+        pushButton->setGeometry(QRect(10, 240, 151, 41));
         pushButton_4 = new QPushButton(FormPembelian);
         pushButton_4->setObjectName("pushButton_4");
-        pushButton_4->setGeometry(QRect(60, 290, 151, 41));
+        pushButton_4->setGeometry(QRect(10, 290, 151, 41));
+        tablePembelian = new QTableView(FormPembelian);
+        tablePembelian->setObjectName("tablePembelian");
+        tablePembelian->setGeometry(QRect(330, 30, 461, 301));
 
         retranslateUi(FormPembelian);
 

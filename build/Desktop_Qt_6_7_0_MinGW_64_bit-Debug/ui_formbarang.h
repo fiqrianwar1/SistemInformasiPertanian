@@ -13,9 +13,11 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QFormLayout>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTableView>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -39,27 +41,28 @@ public:
     QLineEdit *harga_beliLineEdit;
     QLabel *harga_jualLabel;
     QLineEdit *harga_jualLineEdit;
+    QTableView *tableBarang;
 
     void setupUi(QWidget *FormBarang)
     {
         if (FormBarang->objectName().isEmpty())
             FormBarang->setObjectName("FormBarang");
-        FormBarang->resize(497, 343);
+        FormBarang->resize(797, 509);
         pushButton_3 = new QPushButton(FormBarang);
         pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setGeometry(QRect(210, 230, 151, 41));
+        pushButton_3->setGeometry(QRect(170, 230, 151, 41));
         pushButton = new QPushButton(FormBarang);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(50, 180, 151, 41));
+        pushButton->setGeometry(QRect(10, 180, 151, 41));
         pushButton_4 = new QPushButton(FormBarang);
         pushButton_4->setObjectName("pushButton_4");
-        pushButton_4->setGeometry(QRect(50, 230, 151, 41));
+        pushButton_4->setGeometry(QRect(10, 230, 151, 41));
         pushButton_2 = new QPushButton(FormBarang);
         pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(210, 180, 151, 41));
+        pushButton_2->setGeometry(QRect(170, 180, 151, 41));
         formLayoutWidget = new QWidget(FormBarang);
         formLayoutWidget->setObjectName("formLayoutWidget");
-        formLayoutWidget->setGeometry(QRect(50, 30, 311, 141));
+        formLayoutWidget->setGeometry(QRect(10, 30, 311, 141));
         formLayout = new QFormLayout(formLayoutWidget);
         formLayout->setObjectName("formLayout");
         formLayout->setContentsMargins(0, 0, 0, 0);
@@ -117,6 +120,9 @@ public:
 
         formLayout->setWidget(4, QFormLayout::FieldRole, harga_jualLineEdit);
 
+        tableBarang = new QTableView(FormBarang);
+        tableBarang->setObjectName("tableBarang");
+        tableBarang->setGeometry(QRect(330, 30, 461, 241));
 
         retranslateUi(FormBarang);
 

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>497</width>
-    <height>343</height>
+    <width>797</width>
+    <height>509</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,7 +16,7 @@
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>170</x>
      <y>230</y>
      <width>151</width>
      <height>41</height>
@@ -29,7 +29,7 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>10</x>
      <y>180</y>
      <width>151</width>
      <height>41</height>
@@ -42,7 +42,7 @@
   <widget class="QPushButton" name="pushButton_4">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>10</x>
      <y>230</y>
      <width>151</width>
      <height>41</height>
@@ -55,7 +55,7 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>170</x>
      <y>180</y>
      <width>151</width>
      <height>41</height>
@@ -68,7 +68,7 @@
   <widget class="QWidget" name="formLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>10</x>
      <y>30</y>
      <width>311</width>
      <height>141</height>
@@ -147,6 +147,16 @@
      <widget class="QLineEdit" name="harga_jualLineEdit"/>
     </item>
    </layout>
+  </widget>
+  <widget class="QTableView" name="tableBarang">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>30</y>
+     <width>461</width>
+     <height>241</height>
+    </rect>
+   </property>
   </widget>
  </widget>
  <resources/>

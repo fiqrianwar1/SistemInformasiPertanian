@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>455</width>
-    <height>359</height>
+    <width>799</width>
+    <height>503</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QWidget" name="formLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>60</y>
+     <x>10</x>
+     <y>70</y>
      <width>311</width>
      <height>171</height>
     </rect>
@@ -88,8 +88,8 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>240</y>
+     <x>10</x>
+     <y>250</y>
      <width>151</width>
      <height>41</height>
     </rect>
@@ -101,8 +101,8 @@
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>290</y>
+     <x>170</x>
+     <y>300</y>
      <width>151</width>
      <height>41</height>
     </rect>
@@ -114,8 +114,8 @@
   <widget class="QPushButton" name="pushButton_4">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>290</y>
+     <x>10</x>
+     <y>300</y>
      <width>151</width>
      <height>41</height>
     </rect>
@@ -127,14 +127,24 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>240</y>
+     <x>170</x>
+     <y>250</y>
      <width>151</width>
      <height>41</height>
     </rect>
    </property>
    <property name="text">
     <string>Ubah</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableSupplier">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>70</y>
+     <width>451</width>
+     <height>271</height>
+    </rect>
    </property>
   </widget>
  </widget>

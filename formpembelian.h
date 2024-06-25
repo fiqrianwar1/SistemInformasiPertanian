@@ -8,6 +8,7 @@
 #include <QSqlQuery>
 #include <QDebug>
 #include <QSqlRecord>
+#include <QSqlQueryModel>
 
 namespace Ui {
 class FormPembelian;
@@ -19,6 +20,7 @@ class FormPembelian : public QWidget
 
 public:
     explicit FormPembelian(QWidget *parent = nullptr);
+    void loadTablePembelian();
     ~FormPembelian();
 
 private slots:
@@ -30,11 +32,14 @@ private slots:
 
     void on_pushButton_3_clicked();
 
+    void on_tablePembelian_activated(const QModelIndex &index);
+
 private:
     Ui::FormPembelian *ui;
     QSqlDatabase koneksi;
     QSqlQuery sql;
     QSqlRecord cari;
+    QSqlQueryModel * tabelModel;
 };
 
 #endif // FORMPEMBELIAN_H

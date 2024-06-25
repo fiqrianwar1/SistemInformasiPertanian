@@ -8,6 +8,7 @@
 #include <QSqlQuery>
 #include <QDebug>
 #include <QSqlRecord>
+#include <QSqlQueryModel>
 
 namespace Ui {
 class Formsupplier;
@@ -19,6 +20,7 @@ class Formsupplier : public QWidget
 
 public:
     explicit Formsupplier(QWidget *parent = nullptr);
+    void loadTableSupplier();
     ~Formsupplier();
 
 private slots:
@@ -30,11 +32,14 @@ private slots:
 
     void on_pushButton_3_clicked();
 
+    void on_tableSupplier_activated(const QModelIndex &index);
+
 private:
     Ui::Formsupplier *ui;
     QSqlDatabase koneksi;
     QSqlQuery sql;
     QSqlRecord cari;
+    QSqlQueryModel * tabelModel;
 };
 
 #endif // FORMSUPPLIER_H

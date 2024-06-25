@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>521</width>
-    <height>429</height>
+    <width>801</width>
+    <height>497</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,7 +16,7 @@
   <widget class="QWidget" name="formLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>20</x>
      <y>60</y>
      <width>311</width>
      <height>201</height>
@@ -98,7 +98,7 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>250</x>
+     <x>180</x>
      <y>270</y>
      <width>151</width>
      <height>41</height>
@@ -111,7 +111,7 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>20</x>
      <y>270</y>
      <width>151</width>
      <height>41</height>
@@ -124,7 +124,7 @@
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>250</x>
+     <x>180</x>
      <y>320</y>
      <width>151</width>
      <height>41</height>
@@ -137,7 +137,7 @@
   <widget class="QPushButton" name="pushButton_4">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>20</x>
      <y>320</y>
      <width>151</width>
      <height>41</height>
@@ -145,6 +145,16 @@
    </property>
    <property name="text">
     <string>Hapus</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tablePenjualan">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>60</y>
+     <width>451</width>
+     <height>301</height>
+    </rect>
    </property>
   </widget>
  </widget>

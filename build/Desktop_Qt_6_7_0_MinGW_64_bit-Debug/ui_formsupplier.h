@@ -12,9 +12,11 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QFormLayout>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTableView>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -40,15 +42,16 @@ public:
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
     QPushButton *pushButton_2;
+    QTableView *tableSupplier;
 
     void setupUi(QWidget *Formsupplier)
     {
         if (Formsupplier->objectName().isEmpty())
             Formsupplier->setObjectName("Formsupplier");
-        Formsupplier->resize(455, 359);
+        Formsupplier->resize(799, 503);
         formLayoutWidget = new QWidget(Formsupplier);
         formLayoutWidget->setObjectName("formLayoutWidget");
-        formLayoutWidget->setGeometry(QRect(50, 60, 311, 171));
+        formLayoutWidget->setGeometry(QRect(10, 70, 311, 171));
         formLayout = new QFormLayout(formLayoutWidget);
         formLayout->setObjectName("formLayout");
         formLayout->setContentsMargins(0, 0, 0, 0);
@@ -114,16 +117,19 @@ public:
 
         pushButton = new QPushButton(Formsupplier);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(50, 240, 151, 41));
+        pushButton->setGeometry(QRect(10, 250, 151, 41));
         pushButton_3 = new QPushButton(Formsupplier);
         pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setGeometry(QRect(210, 290, 151, 41));
+        pushButton_3->setGeometry(QRect(170, 300, 151, 41));
         pushButton_4 = new QPushButton(Formsupplier);
         pushButton_4->setObjectName("pushButton_4");
-        pushButton_4->setGeometry(QRect(50, 290, 151, 41));
+        pushButton_4->setGeometry(QRect(10, 300, 151, 41));
         pushButton_2 = new QPushButton(Formsupplier);
         pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(210, 240, 151, 41));
+        pushButton_2->setGeometry(QRect(170, 250, 151, 41));
+        tableSupplier = new QTableView(Formsupplier);
+        tableSupplier->setObjectName("tableSupplier");
+        tableSupplier->setGeometry(QRect(330, 70, 451, 271));
 
         retranslateUi(Formsupplier);
 

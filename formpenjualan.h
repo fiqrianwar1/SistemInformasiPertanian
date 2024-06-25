@@ -8,6 +8,7 @@
 #include <QSqlQuery>
 #include <QDebug>
 #include <QSqlRecord>
+#include <QSqlQueryModel>
 
 namespace Ui {
 class FormPenjualan;
@@ -19,6 +20,7 @@ class FormPenjualan : public QWidget
 
 public:
     explicit FormPenjualan(QWidget *parent = nullptr);
+    void loadTablePenjualan();
     ~FormPenjualan();
 
 private slots:
@@ -30,11 +32,14 @@ private slots:
 
     void on_pushButton_3_clicked();
 
+    void on_tablePenjualan_activated(const QModelIndex &index);
+
 private:
     Ui::FormPenjualan *ui;
     QSqlDatabase koneksi;
     QSqlQuery sql;
     QSqlRecord cari;
+    QSqlQueryModel * tabelModel;
 };
 
 #endif // FORMPENJUALAN_H
